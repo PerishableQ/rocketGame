@@ -7,7 +7,7 @@ let gameHeight = canvas.height = 720;
 let bgImgReady = false;
 let bgImg = new Image();
 bgImg.onload = () => bgImgReady = true;
-bgImg.src = '/images/mars.jpg';
+bgImg.src = 'images/mars.jpg';
 
 // Image of rocket
 let rocketReady = false;
