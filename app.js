@@ -89,5 +89,10 @@ function gameLoop() {
     requestAnimationFrame(gameLoop);
 }
 
+requestAnimationFrame = window.requestAnimationFrame || 
+                        window.webkitRequestAnimationFrame || 
+                        window.mozRequestAnimationFrame || 
+                        window.msRequestAnimationFrame;
+                        
 let then = Date.now();
 gameLoop();
