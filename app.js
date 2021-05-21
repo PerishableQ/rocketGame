@@ -70,9 +70,9 @@ function render() {
 // don't let rocket to to through walls
 function dontLetRocketToHide() {
     if (rocket.x <= -30) rocket.x = -30;
-    if (rocket.x + 100 > gameWidth) rocket.x = gameWidth - 95;
+    if (rocket.x + 90 > gameWidth) rocket.x = gameWidth - 90;
     if (rocket.y <= 0) rocket.y = 0;
-    if (rocket.y > gameHeight) rocket.y = 620;
+    if (rocket.y - 120 > gameHeight) rocket.y = 620;
 }
 
 // game loop
